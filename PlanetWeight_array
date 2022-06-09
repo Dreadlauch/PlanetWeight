@@ -1,1 +1,20 @@
+#include <stdio.h>
+
+int main(){
+
+double earthWeight;
+int planet;
+double gravity[7] = {0.38, 0.91, 0.38, 2.34, 1.06, 0.92, 1.19};
+
+
+printf("Please enter your earth weight: ");
+scanf("%lf\n", &earthWeight);
+
+printf("Now choose a planet, I can calculate for:\n");
+printf("1.Mercury\t2.Venus\t3.Mars\n");
+printf("4.Jupiter\t5.Saturn\t6.Uranus\n");
+printf("7.Neptune\n");
+
+printf("\nPlease enter a number of choice: ");
+scanf("%d\n", planet);
 
