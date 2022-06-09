@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+int main() {
+  double EarthWeight;
+  int Planet;
+  int counter=0;
+
+
+printf("\nThis program can be used to calculate the weight of physical mass on other Planets.\n");
+printf("\nPlease enter earth weight: ");
+scanf("%lf", &EarthWeight);
+
+printf("\nNow choose a planet, I can calculate for:\n");
+printf("1.Mercury \t2.Venus \t3.Mars\n");
+printf("4.Jupiter \t5.Saturn \t6.Uranus\n");
+printf("7.Netptune\n");
+
+printf("\nPlease enter the number of choice: ");
+scanf("%d", &Planet);
+
+while(Planet > 7 || Planet <= 0 && counter <= 5){
+printf("Try again. Please enter the number of choice: ");
+scanf("%d", &Planet);
+counter++;
+	if (counter == 5){
+	printf("One more time; Enter a number for your planet of choice you see listed above and press Enter.\n\n");
+	}
+	if (counter > 5 && Planet > 7){
+	printf("\nCan't you read!? You should've picked a number between 1-7. I'm done...\n");
+	break;
+	}
+	if (counter > 5 && Planet <= 0){
+	printf("\nCan't you read!? You should've picked a number between 1-7. I'm done...\n");
+	break;
+	}
+}
+
+
+  switch (Planet)
+  {
+    case 1: 
+    printf("You chose planet Mercury. The weight on this planet is: %.2f\n", EarthWeight*0.38);
+    break;
+    case 2:
+    printf("You chose planet Venus. The weight on this planet is: %.2f\n", EarthWeight*0.91);
+    break;
+    case 3:
+    printf("You chose planet Mars. The weight on this planet is: %.2f\n", EarthWeight*0.38);
+    break;
+    case 4:
+    printf("You chose planet Jupiter. The weight on this planet is: %.2f\n", EarthWeight*2.34);
+    break;
+    case 5:
+    printf("You chose planet Saturn. The weight on this planet is: %.2f\n", EarthWeight*1.06);
+    break;
+    case 6:
+    printf("You chose planet Uranus. The weight on this planet is: %.2f\n", EarthWeight*0.92);
+    break;
+    case 7:
+    printf("You chose planet Neptune. The weight on this planet is: %.2f\n", EarthWeight*1.19);
+    break;
+  }
+
+
+printf("\n");
+
+
+
+
+
+
+
+
+
+}
