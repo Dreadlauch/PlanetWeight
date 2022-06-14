@@ -21,7 +21,7 @@ int counter = 0;
 	scanf("%d", &plnt_int);
 
 	while(plnt_int > 7 || plnt_int <= 0 && counter <= 5){
-		printf("Try again. Please enter the number 1-7: ");
+		printf("Try again. Please enter a number 1-7: ");
 		scanf("%d", &plnt_int);
 	counter++;
 		if (counter == 5){
